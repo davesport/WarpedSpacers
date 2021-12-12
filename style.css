@@ -1,0 +1,338 @@
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Banner */
+.banner {
+    background-image: url(../images/background/outer_space.png);
+    background-repeat: repeat;
+    color: white; 
+    text-align: center;
+    padding: 50px; 
+}
+
+main {
+    padding-top: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 4em;
+}
+
+aside {
+    display: block;
+    background-color: rgb(164, 226, 255);
+    padding-top: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom:4em;
+}
+
+footer {
+    min-height: 22em;
+    background-image: url(../images/liberry_patch.png);
+    background-color:rgb(15, 28, 56);
+    padding: 50px; 
+}
+
+footer p {
+    position: relative;
+    left: 200px;
+    color: white; 
+}
+/* Main menu */
+.primary-menu {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: rgb(0, 174, 255);
+    padding: .5em;
+    min-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Main menu */
+.primary-menu ul li {
+    background-color:rgb(0, 174, 255);
+}
+
+/* button */
+.dropbtn {
+    background-color:rgb(0, 174, 255);
+    padding: .5em; 
+    font-size: 16px;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* End of main menu */ 
+
+.gif {
+    margin-left: auto;
+    margin-right: auto;
+    width: 15em;
+}
+
+/* Page layout */
+@media (min-width: 800px) {
+    .content-wrapper {
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 2fr 1fr; 
+        grid-template-areas: "banner banner" "main aside" "footer footer";
+    }
+
+    .banner {
+        grid-area: banner;
+    }
+
+    main {
+        grid-area: main;
+    }
+
+    aside {
+        grid-area: aside;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+}
+/* END OF PAGE LAYOUT */
+/* main page */ 
+
+/* ----------------------------------------------------------
+-------------------------------------------------------------
+PAGE 1 STYLING: GENRE & ANTHOLOGIES
+-------------------------------------------------------------
+---------------------------------------------------------- */
+
+#news {
+    background-color: rgb(238, 238, 238);
+    padding: 1em;
+}
+
+/* SCHEDULE */ 
+.schedule {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+.row1   {
+    border: 2px solid black;
+    padding: 1em; 
+    text-align: center; 
+    background-color: rgb(177, 136, 255);
+}
+
+.row3 {
+    border: 2px solid black;
+    padding: 1em; 
+    text-align: center; 
+    background-color: rgb(177, 136, 255);
+}
+
+.row5 {
+    border: 2px solid black;
+    padding: 1em; 
+    text-align: center; 
+    background-color: rgb(177, 136, 255);
+}
+
+.row2 {
+    border: 2px solid black;
+    padding: 1em; 
+    text-align: center; 
+    background-color: rgb(217, 166, 252);
+}
+
+.row4 {
+    border: 2px solid black;
+    padding: 1em; 
+    text-align: center; 
+    background-color: rgb(217, 166, 252);
+}
+
+.row6 {
+    border: 2px solid black;
+    padding: 1em; 
+    text-align: center; 
+    background-color: rgb(217, 166, 252);
+}
+
+.endrow {
+    background-color: rgb(177, 136, 255);
+}
+/* end of schedule */
+
+/* anthologies */
+.anthorow {
+    margin-left: auto;
+    margin-right: auto;
+    width: 15em;
+    padding: 2px;
+}
+
+.anthocolumn {
+    flex: 50%;
+    padding: 2px;
+}
+
+.anthocolumn img {
+    margin-top: 8px;
+    margin-left: 30px;
+    vertical-align: middle;
+}
+
+.anthorow p {
+    margin-left: 30px;
+}
+/* end of anthologies on sale */
+
+/* ----------------------------------------------------------
+-------------------------------------------------------------
+PAGE 2 STYLING: MEMBERS, HISTORY 
+-------------------------------------------------------------
+---------------------------------------------------------- */
+.members {
+    padding-left: 2em;
+    padding-bottom: 2em;
+    text-align: center;
+}
+
+.members ul {
+    list-style-type: none;
+}
+
+.memberstitle {
+    text-align: center;
+}
+/* genre */ 
+.genreheading {
+    text-align: center;
+}
+.genre {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2em;
+}
+
+.genreitem {
+    box-shadow: 1em .5em .5em rgb(164, 226, 255);
+}
+/* end of genre */
+
+/* ----------------------------------------------------------
+-------------------------------------------------------------
+PAGE 3 STYLING: WRITING SUPPORT 
+-------------------------------------------------------------
+---------------------------------------------------------- */
+#wrgroup {
+    font-weight: bolder;
+}
+
+#contests {
+    font-weight: bolder;
+}
+
+#publish {
+    font-weight: bolder;
+}
+
+#outside {
+    font-weight: bolder;
+}
+
+#statements {
+    font-weight: bolder;
+}
+/* ----------------------------------------------------------
+-------------------------------------------------------------
+PAGE 4 STYLING: FORM, INTEREST 
+-------------------------------------------------------------
+---------------------------------------------------------- */
+
+/* form - questions */
+.interestheading {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:rgb(0, 63, 92);
+}
+
+.interest label {
+    display: block;
+    font-weight: bold;
+}
+/* end of form */
+
+#java {
+    background-color: rgb(36, 0, 167);
+    color: white;
+    border: 10px solid #4dff4d;
+}
+
+aside h3 {
+    justify-content: center;
+}
+
+aside p {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+/* ----------------------------------------------------------
+-------------------------------------------------------------
+PAGE 4 STYLING: RECOMMENDATIONS 
+-------------------------------------------------------------
+---------------------------------------------------------- */
+.recommendations {
+    border-collapse: collapse;
+}
+
+.header {
+    border: 2px solid black; 
+}
+
+.recommendations tr, td { 
+    border: 2px solid black;
+    padding: 1em; 
+    text-align: center;  
+}
+
+.trow1 {
+    background-color: rgb(106, 255, 186);
+}
+
+.trow2 {
+    background-color:rgb(42, 233, 201)
+}
+
+.trow3 {
+    background-color: rgb(106, 255, 186);
+}
+
+.recommendations tfoot {
+    text-align: center;
+    font-weight: bold; 
+    font-size: smaller; 
+}
+
+.enjoytitle {
+    text-align: center;
+}
+/* ----------------------------------------------------------
+-------------------------------------------------------------
+PAGE 5 STYLING: ARCHIVE 
+-------------------------------------------------------------
+---------------------------------------------------------- */
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

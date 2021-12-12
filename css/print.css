@@ -1,0 +1,15 @@
+a::after {
+    content: " (" attr(href) ")";
+}
+
+a:not([href^="http"])::after { 
+    content: " (https://40px.us/r6/9/" attr(href) ")";
+}
+
+a[href^="#"] {
+    display: none; 
+}
+
+.recommendations::after {
+    content: " [Media URL: " attr(data-url) "]"; 
+}

@@ -1,0 +1,138 @@
+<?php include("includes/process.php");?>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> First page </title>
+  <meta name="description" content="This page is meant for those outside the group that have questions for us, or would like to join the group. This way, we can help the group grow.">
+  <link rel="stylesheet" media = "screen" href="css/style.css">
+  <link rel="stylesheet" media = "print" href="css/print.css">
+</head>
+
+<body>
+<div class="content-wrapper"> 
+    <header class="banner">
+      <h1> The Warped Spacers </h1>
+        <h3> writing, reading, watching & listening to speculative fiction since 1987 </h3>
+    
+        <nav class="primary-menu">
+
+        <div> 
+            <div class="dropbtn"> <a href="index.php"> Main page </a> </div>
+        </div>  
+        
+        <div>
+            <div class="dropbtn"> <a href="about.php"> About us </a> </div>
+        </div>
+
+        <div> 
+            <div class="dropbtn"> <a href="support.php"> Writing support </a> </div>
+        </div> 
+
+        <div> 
+            <div class="dropbtn"> <a href="form.php"> Apply </a> </div>
+        </div> 
+
+        <div> 
+            <div class="dropbtn"> <a href="enjoy.php"> Fiction favorites </a> </div>
+        </div> 
+
+        <div> 
+            <div class="dropbtn"> <a href="archive.php"> Archive </a> </div>
+        </div> 
+    </nav>
+</header>
+
+<main> 
+<div class="interestheading">
+    <h1> Join the Spacers </h1>
+</div>
+
+<?php print $formMessage;?>
+
+<div class="interest">
+
+    <form method="post">
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="First Last">
+
+    <p> What are your writing goals? </p>
+    <textarea name="goals"></textarea>
+
+    <p> Tell us a bit about yourself: </p>
+    <textarea name="self"></textarea> 
+    <br> 
+    <br> 
+
+    <fieldset>
+        <legend> Where are you at now: </legend>
+        <label for="hobbyist"> Hobbyist </label>
+        <input type="radio" id="hobbyist" name="color" value="blue">
+        <label for="seekpub"> Seeking publication </label>
+        <input type="radio" id="seekpub" name="color" value="blue">
+        <label for="parttime"> Part-time writer </label>
+        <input type="radio" id="parttime" name="color" value="blue">
+        <label for="fulltime"> Full-time writer </label>
+        <input type="radio" id="fulltime" name="color" value="blue">
+    </fieldset>
+    <br> 
+    <br> 
+
+    <fieldset> 
+    <legend> What do you write? (select all that apply) </legend> 
+
+    <label> Flash fiction <input type="checkbox" name="types[]" value="flash fiction"></label>
+    <label> Short stories <input type="checkbox" name="types[]" value="short stories"></label>
+    <label> Books <input type="checkbox" name="types[]" value="books"></label>
+    <label> Poetry <input type="checkbox" name="types[]" value="poetry"></label>
+    <label> Articles <input type="checkbox" name="types[]" value="articles"></label>
+    </fieldset>
+    <br> 
+    <br>
+
+    <label for="updates"> Subscribe to updates from the Spacers? </label> 
+    <select name="updates" id="updates">
+        <option value="no">No</option>
+        <option value="yes">Yes</option>
+    </select>
+
+    <br>
+    <br>
+
+    <p> Comments: </p>
+    <textarea name="message"></textarea>
+    <br> 
+    <br>
+
+    <input type="submit" value="submit form">
+
+    </form>
+
+</div>
+</main>
+
+<aside> 
+
+    <div class="gif">
+        <img src="video/outerspace.gif" alt="Outer space!"> 
+    </div>
+
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/2o6WxIMvdyE" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+
+<h3> Thanks for your interest! </h3>
+
+<p> If you have any questions or comments for us, please write them in the comment section of the form. </p>
+
+<p> For this form: There are many kinds of writers. There aren't right or wrong answers on this form, instead your responses help us get to know you better! </p> 
+
+<p> The Warped Spacers meet twice a month on Zoom, which means you can join our meetings from anywhere. We aren't always taking new authors in order to manage the size of our group, but please contact us so we can be in touch! We also can consult one submission from someone who is not a current member but would like feedback on their work. </p>
+
+</aside> 
+
+<footer> 
+<?php include('includes/footer.php'); ?>
+</footer>
+</div>
+</body> 
