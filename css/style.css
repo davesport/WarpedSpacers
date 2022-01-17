@@ -291,41 +291,14 @@ aside p {
 PAGE 4 STYLING: RECOMMENDATIONS 
 -------------------------------------------------------------
 ---------------------------------------------------------- */
-.recommendations {
-    border-collapse: collapse;
+ 
+.enjoy-tile {
+    background-color: rgb(124, 206, 1);
+    padding: 2em;
+    margin: 1em;
+    float: left;
 }
 
-.header {
-    border: 2px solid black; 
-}
-
-.recommendations tr, td { 
-    border: 2px solid black;
-    padding: 1em; 
-    text-align: center;  
-}
-
-.trow1 {
-    background-color: rgb(106, 255, 186);
-}
-
-.trow2 {
-    background-color:rgb(42, 233, 201)
-}
-
-.trow3 {
-    background-color: rgb(106, 255, 186);
-}
-
-.recommendations tfoot {
-    text-align: center;
-    font-weight: bold; 
-    font-size: smaller; 
-}
-
-.enjoytitle {
-    text-align: center;
-}
 /* ----------------------------------------------------------
 -------------------------------------------------------------
 PAGE 5 STYLING: ARCHIVE 
