@@ -226,6 +226,7 @@ PAGE 2 STYLING: MEMBERS, HISTORY
 
 .genreitem {
     box-shadow: 1em .5em .5em rgb(164, 226, 255);
+    margin: .5em;
 }
 /* end of genre */
 
@@ -292,11 +293,17 @@ PAGE 4 STYLING: RECOMMENDATIONS
 -------------------------------------------------------------
 ---------------------------------------------------------- */
  
-.enjoy-tile {
-    background-color: rgb(124, 206, 1);
-    padding: 2em;
-    margin: 1em;
+.enjoybox {
     float: left;
+    overflow: auto;
+    width: 240px;
+    border: 2px solid rgb(31, 3, 105);
+    padding: 10px;
+    margin: 10px;
+}
+
+.endsource {
+    font-weight: bolder;
 }
 
 /* ----------------------------------------------------------
