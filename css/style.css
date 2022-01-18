@@ -302,6 +302,14 @@ PAGE 4 STYLING: RECOMMENDATIONS
     margin: 10px;
 }
 
+.moviesbox {
+    display: block;
+}
+
+.showsbox {
+    display: block;
+}
+
 .endsource {
     font-weight: bolder;
 }
